@@ -1,0 +1,13 @@
+[flake8]
+max-line-length = 84
+
+# Ignored rules (kept here so pre-commit's flake8 hook doesn't reject the repo).
+#
+# D101: Missing docstring in public class
+# D102: Missing docstring in public method
+# D104: Missing docstring in public package
+# D107: Missing docstring in __init__
+# D205: 1 blank line required between summary line and description
+# D400: First line should end with a period
+# D403: First word of the first line should be properly capitalized
+extend-ignore = D101, D102, D104, D107, D205, D400, D403
