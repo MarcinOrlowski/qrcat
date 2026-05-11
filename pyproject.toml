@@ -15,7 +15,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "qrcat"
-version = "1.0.0"
+version = "1.0.1"
 description = "Render QR codes directly to the terminal using just block chars."
 readme = "README-pypi.md"
 requires-python = ">=3.10"
