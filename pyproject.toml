@@ -17,10 +17,27 @@ build-backend = "hatchling.build"
 name = "qrcat"
 version = "1.0.0"
 description = "Render QR codes directly to the terminal using just block chars."
-readme = "README.md"
+readme = "README-pypi.md"
 requires-python = ">=3.10"
 license = { text = "MIT" }
 authors = [{name = "Marcin Orlowski", email = "mail@MarcinOrlowski.com"}]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+]
+keywords = ["qrcode", "console", "qrc", "terminal"]
 dependencies = [
     "segno>=1.6",
 ]
@@ -28,7 +45,27 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "pytest>=8.0",
+    "pytest-cov>=4.0",
+    "black>=23.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0",
+    "wemake-python-styleguide",
+    "wheel",
+    "build",
+    "twine",
+    "faker",
+    "flake8",
+    "flake8-noqa",
+    "flake8-docstrings",
+    "types-Markdown",
+    "types-PyYAML",
+    "python-dateutil",
 ]
+
+[project.urls]
+Homepage = "https://github.com/MarcinOrlowski/qrcat"
+Repository = "https://github.com/MarcinOrlowski/qrcat"
+Issues = "https://github.com/MarcinOrlowski/qrcat/issues"
 
 [project.scripts]
 qrcat = "qrcat.cli:main"
@@ -39,3 +76,12 @@ packages = ["src/qrcat"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-ra -q"
+
+[tool.black]
+line-length = 88
+target-version = ['py38']
+
+[tool.ruff]
+target-version = "py38"
+line-length = 88
+select = ["E", "F", "I", "N", "W"]
