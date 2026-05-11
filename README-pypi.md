@@ -1,4 +1,4 @@
-![qrcat logo](docs/logo.webp)
+![qrcat logo](https://raw.githubusercontent.com/MarcinOrlowski/qrcat/refs/heads/master/docs/logo.webp)
 
 
 ![PyPI - Version](https://img.shields.io/pypi/v/qrcat?style=flat)
