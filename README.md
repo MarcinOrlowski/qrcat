@@ -1,8 +1,6 @@
 ![qrcat logo](docs/logo.webp)
 
-
 ![PyPI - Version](https://img.shields.io/pypi/v/qrcat?style=flat)
-[![PyPI Downloads](https://static.pepy.tech/badge/qrcat)](https://pepy.tech/projects/qrcat)
 ![MIT License](https://img.shields.io/github/license/MarcinOrlowski/qrcat)
 
 # qrcat
@@ -10,17 +8,22 @@
 `qrcat` (pronounced `Purr Cat`) is a command line utility that prints QR codes directly to your
 terminal using nothing but block characters.
 
+## Installation
+
+Use [pipx](https://pypi.org/project/pipx/) manager to install `qrcat` as standalone application in
+your system.
+
 ```bash
 pipx install qrcat
 ```
 
-Aside from being a standalone application, you can also use `qrcat` in your Python project.
-See [dev docs](docs/README.md) for more information.
+Aside from being a CLI tool, you can use `qrcat` as library in your Python project and generate QR
+codes from and for your Python project. See [dev docs](docs/README.md) for more information.
 
 ## Features
 
-- Pure-Python, single runtime dep (`segno`) — no Pillow, no browser, no PNG.
-- Pluggable renderer architecture — half-block today, quadrant / ANSI-color drop-in tomorrow.
+- Pure-Python, single runtime dep (`segno`) - no Pillow, no browser, no PNG.
+- Pluggable renderer architecture - half-block today, quadrant / ANSI-color drop-in tomorrow.
 - Works in any unicode-capable terminal.
 - Library for your Python project *and* CLI tool from the same package.
 
