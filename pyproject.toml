@@ -15,7 +15,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "qrcat"
-version = "1.0.1"
+dynamic = ["version"]
 description = "Render QR codes directly to the terminal using just block chars."
 readme = "README-pypi.md"
 requires-python = ">=3.10"
@@ -69,6 +69,10 @@ Issues = "https://github.com/MarcinOrlowski/qrcat/issues"
 
 [project.scripts]
 qrcat = "qrcat.cli:main"
+
+# Single source of truth for the version: src/qrcat/__init__.py
+[tool.hatch.version]
+path = "src/qrcat/__init__.py"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/qrcat"]

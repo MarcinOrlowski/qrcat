@@ -14,7 +14,7 @@
 from .api import render_qr
 from .renderers import HalfBlockRenderer, Renderer
 
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 __author__ = "Marcin Orlowski"
 __url__ = "https://github.com/MarcinOrlowski/qrcat"
 __all__ = [

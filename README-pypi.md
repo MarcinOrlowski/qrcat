@@ -1,8 +1,6 @@
 ![qrcat logo](https://raw.githubusercontent.com/MarcinOrlowski/qrcat/refs/heads/master/docs/logo.webp)
 
-
 ![PyPI - Version](https://img.shields.io/pypi/v/qrcat?style=flat)
-[![PyPI Downloads](https://static.pepy.tech/badge/qrcat)](https://pepy.tech/projects/qrcat)
 ![MIT License](https://img.shields.io/github/license/MarcinOrlowski/qrcat)
 
 # qrcat
@@ -19,8 +17,8 @@ See [dev docs](docs/README.md) for more information.
 
 ## Features
 
-- Pure-Python, single runtime dep (`segno`) — no Pillow, no browser, no PNG.
-- Pluggable renderer architecture — half-block today, quadrant / ANSI-color drop-in tomorrow.
+- Pure-Python, single runtime dep (`segno`) - no Pillow, no browser, no PNG.
+- Pluggable renderer architecture - half-block today, quadrant / ANSI-color drop-in tomorrow.
 - Works in any unicode-capable terminal.
 - Library for your Python project *and* CLI tool from the same package.
 
